@@ -5,6 +5,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
 
 const Page: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
+  debugger;
   return (
     <IonPage>
       <IonHeader>
