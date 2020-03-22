@@ -1,0 +1,8 @@
+{
+  "name": "washy-hands",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "0db131f7"
+}
