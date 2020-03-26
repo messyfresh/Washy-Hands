@@ -28,13 +28,13 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Wash Hands',
-    url: '/page/Wash Hands',
+    url: '/WashHands',
     iosIcon: handLeftOutline,
     mdIcon: handLeftSharp
   },
   {
     title: 'View History',
-    url: '/page/View History',
+    url: '/WashHistory',
     iosIcon: documentTextOutline,
     mdIcon: documentTextSharp
   }

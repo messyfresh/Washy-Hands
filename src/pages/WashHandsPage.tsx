@@ -2,10 +2,9 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
-import './Page.css';
+import './WashHandsPage.css';
 
-const Page: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
-  debugger;
+const WashHandsPage: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
   return (
     <IonPage>
       <IonHeader>
@@ -13,14 +12,14 @@ const Page: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{match.params.name}</IonTitle>
+          <IonTitle>Wash Hands</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{ match.params.name }</IonTitle>
+            <IonTitle size="large">Wash Hands</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name={match.params.name} />
@@ -29,4 +28,4 @@ const Page: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
   );
 };
 
-export default Page;
+export default WashHandsPage;
