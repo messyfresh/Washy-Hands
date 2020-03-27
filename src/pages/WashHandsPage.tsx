@@ -1,7 +1,7 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
-import ExploreContainer from '../components/ExploreContainer';
+import WashHands from '../components/WashHands';
 import './WashHandsPage.css';
 
 const WashHandsPage: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
@@ -22,7 +22,7 @@ const WashHandsPage: React.FC<RouteComponentProps<{ name: string; }>> = ({ match
             <IonTitle size="large">Wash Hands</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={match.params.name} />
+        <WashHands name="Wash Hands" />
       </IonContent>
     </IonPage>
   );
